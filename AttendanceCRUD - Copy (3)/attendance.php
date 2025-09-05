@@ -5,7 +5,7 @@ require_once __DIR__ . '/class/student_class.php';
 require_once __DIR__ . '/auth/session.php';
 require_once __DIR__ . '/class/admin_class.php';
 
-// ensure admin access
+// admin access
 Session::requireAdmin();
 
 $admin = new Admin();
@@ -244,3 +244,4 @@ $students = $student->readAll();
   </footer>
 </body>
 </html>
+
